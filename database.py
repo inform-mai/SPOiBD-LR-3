@@ -145,7 +145,6 @@ class Database:
             writer.writerows(rows)
 
         print(f"Данные экспортированы в {filename}")
-
     # Импорт таблицы из CSV
     def import_from_csv(self, table, filename):
         with open(filename, 'r', encoding='utf-8', newline='') as f:
